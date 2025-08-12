@@ -50,7 +50,7 @@ EXCEPTION
     WHEN ex_nome_invalido THEN
         DBMS_OUTPUT.PUT_LINE('Erro: Nome inválido. Não pode ser nulo nem conter números.');
     WHEN ex_cnpj_invalida THEN
-        DBMS_OUTPUT.PUT_LINE('Erro: CNPJ inválidA. Não pode ser nula, não pode conter letras e tem que estar no formato: 00000000/0000-00.');
+        DBMS_OUTPUT.PUT_LINE('Erro: CNPJ inválida. Não pode ser nula, não pode conter letras e tem que estar no formato: 00000000/0000-00.');
     WHEN OTHERS THEN
         DBMS_OUTPUT.PUT_LINE('Erro inesperado: ' || SQLERRM);
 END;
